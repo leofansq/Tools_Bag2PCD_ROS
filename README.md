@@ -1,10 +1,19 @@
 ## Bag2PCD_ROStool ##
 
 ### 1. Build Project ###
-Save the project in */catkin_ws/src* and run	
+Save the project in */catkin_ws/src* and run
+
 	`cd catkin_ws`; `catkin_make`
 ### 2. Run bag_ to_pcd Node ###
-Run `roscore` on the first console. Then open a new console, run `rosrun Bag2PCD_ROStool bag_to_pcd <cloud_topic> <output_directory> `in the *catkin_ws* directory.
+* Run `roscore` on the first console.
+* Then open a new console, run
+```
+source devel/setup.bash
+```
+```
+rosrun Bag2PCD_ROStool bag_to_pcd <cloud_topic> <output_directory>
+```
+in the *catkin_ws* directory.
 
 Where: 
 
