@@ -59,7 +59,7 @@ int main(int argc, char** argv) {
               << std::endl;
     return (-1);
   }
-  output_dir = argv[2]
+  output_dir = argv[2];
 
   ros::NodeHandle nh;
   ros::Subscriber sub_cloud = nh.subscribe(argv[1], 10, PointCloudCallback);
